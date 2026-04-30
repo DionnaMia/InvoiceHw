@@ -1,0 +1,98 @@
+:root {
+    --primary-blue: #1a4580;
+    --light-blue-bg: #f4f7f9;
+    --border-color: #d1d9e0;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 0;
+}
+
+.invoice-container {
+    background-color: white;
+    width: 800px;
+    padding: 60px;
+    border: 1px solid #ccc;
+    min-height: 1000px;
+}
+
+/* The blue header area */
+.invoice-header {
+    background: linear-gradient(to right, #002b5c, #4a90e2);
+    color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.invoice-header h1 { margin: 0; font-size: 28pt; }
+.invoice-header p { margin: 5px 0; font-size: 10pt; }
+
+/* Section styling */
+h2, h3 { color: #1a4580; margin-bottom: 5px; }
+
+.billing-details {
+    display: flex;
+    justify-content: space-between; /* This puts Bill To on left, For on right */
+    margin-top: 30px;
+}
+
+/* Table styling to match image_39bd97.png */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+th {
+    background-color: #1a4580;
+    color: white;
+    padding: 10px;
+    border: 1px solid #1a4580;
+}
+
+td {
+    border: 1px solid #1a4580;
+    height: 35px;
+    padding: 5px;
+}
+
+tr:nth-child(even) { background-color: #f2f5f9; }
+
+/* Totals alignment */
+.totals-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Pushes totals to the right */
+    margin-top: 20px;
+}
+
+.totals-grid {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    text-align: right;
+    align-items: center;
+}
+
+.amount-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: -1px; /* Prevents double borders */
+}
+
+.total-box {
+    background-color: #1a4580;
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer */
+.invoice-footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
